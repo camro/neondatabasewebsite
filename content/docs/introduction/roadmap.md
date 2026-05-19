@@ -9,7 +9,7 @@ redirectFrom:
   - /docs/cloud/roadmap
   - /docs/conceptual-guides/roadmap
   - /docs/reference/roadmap
-updatedOn: '2026-05-06T01:58:18.000Z'
+updatedOn: '2026-05-09T15:15:10.215Z'
 ---
 
 Our development teams are focused on helping you ship faster with Postgres. This roadmap describes committed features we're working on right now, what we delivered recently, and a peek at what's on the horizon.
@@ -78,6 +78,9 @@ And here's an overview of what we're looking at next:
 
 ## What we've shipped recently 🚢
 
+- **Faster writes**: Neon disabled full-page writes (FPW) across all projects, delivering up to 5x write throughput improvement with no changes required on your end. [Read the announcement](/blog/turning-off-fpw-for-faster-writes).
+- **Require 2FA for your organization**: Org admins can now enforce two-factor authentication for all members from Organization Settings. [Learn more](/docs/manage/orgs-manage#require-2fa-for-organization-members).
+- **One-click Neon MCP setup for Kiro**: The Neon MCP Server now supports an Add to Kiro badge for one-click MCP setup in the Kiro IDE. [Learn more](/docs/ai/connect-mcp-clients-to-neon).
 - **Postgres 18 general availability**: Postgres 18 is now generally available on Neon. [Read the announcement](/blog/postgres-18).
 - **Organization spend limits**: Set a monthly spending limit for your organization from the Billing page and receive email alerts when you reach 80% and 100% of that limit. [Learn more](/docs/introduction/spending-limit).
 - **Neon plugin for OpenAI Codex**: The Neon Postgres plugin is now available in the OpenAI Codex plugin directory, adding the Neon MCP Server and Agent Skills to Codex so you can manage projects, branches, and databases from chat. [Learn more](/docs/ai/ai-codex-plugin)
@@ -150,7 +153,7 @@ And here's an overview of what we're looking at next:
 - **Query monitoring in the console**: Monitor your [active queries](/docs/introduction/monitor-active-queries) and [query performance](/docs/introduction/monitor-query-performance) in the Neon Console.
 - **Schema-only branches**: Create branches that include only your database schema, ideal for workflows involving sensitive data. This feature is now available in Early Access. [Learn more](/docs/guides/branching-schema-only).
 - Support for the [postgres_fdw](/docs/extensions/postgres_fdw), [dblink](/docs/extensions/dblink), and [pg_repack](/docs/extensions/pg_repack) Postgres extensions.
-- **Claimable Postgres: No signup, instant Postgres**: An app that lets you generate a Postgres database URL almost instantly, with no sign up required. Give it a try at [https://neon.new/](https://neon.new/) or by running `npx neon-new` in your terminal. See how fast Neon can spin up a Postgres database (AI agents loves this, btw).
+- **Claimable Postgres: No signup, instant Postgres**: An app that lets you generate a Postgres database URL almost instantly, with no sign up required. Give it a try at [https://neon.new/](https://neon.new/) or by running `npx neon-new` in your terminal. See how fast Neon can spin up a Postgres database (AI agents love this).
 - **Neon Chat for Visual Studio Code**: This AI-powered assistant lets you chat with the latest Neon documentation without leaving your IDE. You can find it here: [Neon Postgres VS Code Extension](https://marketplace.visualstudio.com/items?itemName=buildwithlayer.neon-integration-expert-15j6N).
 - **A GitHub Copilot extension**: This extension provides chat-based access to the latest Neon documentation directly from your repository. You can find it here: [Neon Postgres Copilot Extension](https://github.com/marketplace/neon-database)
 - **Schema Diff API**: Neon now supports schema checks in agentic systems and deployment pipelines with the new schema diff API endpoint. Learn more about [Schema Diff](/docs/guides/schema-diff), which is also available via the console and CLI.

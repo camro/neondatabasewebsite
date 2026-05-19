@@ -8,7 +8,7 @@ summary: >-
 enableTableOfContents: true
 redirectFrom:
   - /docs/get-started-with-neon/dev-experience
-updatedOn: '2026-04-06T14:16:24.000Z'
+updatedOn: '2026-05-12T14:01:17.544Z'
 ---
 
 Our developer experience is anchored by four core pillars:
@@ -62,7 +62,7 @@ Scale to zero is a foundational capability for the Neon experience, allowing us 
 
 In traditional Postgres setups, storage is something you plan upfront: you estimate how much data you’ll need, provision disk accordingly, and revisit that decision as your application grows. Getting this wrong leads to wasted capacity and full-disk errors. Neon removes this friction by making storage fully on demand.
 
-Neon’s storage is [built on object storage](https://neon.com/docs/introduction/architecture-overview), deacoupled from compute. It is reliable by design and it expands automatically as data is written, as scaling storage does not require resizing compute resources or causing downtime. You can start with a small database and grow it continuously, without ever revisiting storage sizing decisions.
+Neon’s storage is [built on object storage](https://neon.com/docs/introduction/architecture-overview), decoupled from compute. It is reliable by design and it expands automatically as data is written, as scaling storage does not require resizing compute resources or causing downtime. You can start with a small database and grow it continuously, without ever revisiting storage sizing decisions.
 
 **What this means for DX**
 
@@ -88,7 +88,7 @@ Neon’s [Instant Restore](https://neon.com/docs/introduction/branch-restore#how
 
 **Snapshots as checkpoints**
 
-In addition to continuous history, Neon exposes [snapshots](https://neon.com/docs/guides/backup-restore), explicit checkpoints that capture your database state at a moment in time. Snapshots are useful when you want long-lived restore points independent of the [restore window](https://neon.com/docs/introduction/restore-window), a known rollback point before a risky change, or versioned checkpoints for environments or [agent workflows](https://neon.com/docs/ai/ai-database-versioning).
+In addition to continuous history, Neon exposes [snapshots](https://neon.com/docs/guides/backup-restore), explicit checkpoints that capture your database state at a moment in time. Snapshots are useful when you want long-lived restore points independent of the [history window](https://neon.com/docs/introduction/history-window), a known rollback point before a risky change, or versioned checkpoints for environments or [agent workflows](https://neon.com/docs/ai/ai-database-versioning).
 
 **What this means for DX**
 

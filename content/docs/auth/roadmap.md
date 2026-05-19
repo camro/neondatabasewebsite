@@ -6,7 +6,7 @@ summary: >-
   frameworks, authentication methods, Better Auth plugins, platform features,
   SDK references, and migration guides.
 enableTableOfContents: true
-updatedOn: '2026-03-31T10:04:02.000Z'
+updatedOn: '2026-05-17T10:06:14.681Z'
 ---
 
 <FeatureBetaProps feature_name="Neon Auth with Better Auth" />
@@ -55,7 +55,9 @@ Neon Auth is built on [Better Auth](https://www.better-auth.com/). Not all Bette
 | [Admin](/docs/auth/guides/plugins/admin)                                           | ✅ Supported                                    |
 | [Organization](/docs/auth/guides/plugins/organization)                             | ⚠️ Partial (JWT token claims under development) |
 | [JWT](/docs/auth/guides/plugins/jwt)                                               | ✅ Supported                                    |
+| [Magic Link](/docs/auth/guides/plugins/magic-link)                                 | ✅ Supported                                    |
 | [Open API](/docs/auth/guides/plugins/openapi)                                      | ✅ Supported                                    |
+| [Phone Number](/docs/auth/guides/plugins/phone-number)                             | ✅ Supported                                    |
 
 See [Set up OAuth](/docs/auth/guides/setup-oauth) for Neon-specific OAuth configuration (including Vercel). Email flows such as verification and password reset are covered in [Email verification](/docs/auth/guides/email-verification), [Password reset](/docs/auth/guides/password-reset), and [User management](/docs/auth/guides/user-management).
 
@@ -63,23 +65,22 @@ See [Set up OAuth](/docs/auth/guides/setup-oauth) for Neon-specific OAuth config
 
 These capabilities are documented in Neon Auth guides but are not Better Auth plugins you enable through the SDK.
 
-| Capability                           | Status    | Documentation                                                    |
-| ------------------------------------ | --------- | ---------------------------------------------------------------- |
-| Trusted domains (redirect allowlist) | Supported | [Configure trusted domains](/docs/auth/guides/configure-domains) |
-| Webhooks (auth events)               | Supported | [Webhooks](/docs/auth/guides/webhooks)                           |
-| Manage Auth via Neon API             | Supported | [Manage Auth in the Neon API](/docs/auth/guides/manage-auth-api) |
+| Capability                           | Status    | Documentation                                                                |
+| ------------------------------------ | --------- | ---------------------------------------------------------------------------- |
+| Trusted domains (redirect allowlist) | Supported | [Configure trusted domains](/docs/auth/guides/configure-domains)             |
+| Webhooks (auth events)               | Supported | [Webhooks](/docs/auth/guides/webhooks)                                       |
+| Manage Auth via Neon API             | Supported | [Manage Auth in the Neon API](/docs/auth/guides/manage-auth-api)             |
+| Manage Auth via Neon MCP (AI editor) | Supported | [Set up with your AI editor](/docs/auth/overview#set-up-with-your-ai-editor) |
 
 Branch-aware auth (separate auth state per Neon branch) is supported; see [Branching authentication](/docs/auth/branching-authentication) and [Authentication flow](/docs/auth/authentication-flow).
 
 ### On the roadmap
 
-| Plugin                                                            | Status          |
-| ----------------------------------------------------------------- | --------------- |
-| [Magic link](https://www.better-auth.com/docs/plugins/magic-link) | 🔜 Coming soon  |
-| Phone number (bring your own SMS provider)                        | 🔜 Coming soon  |
-| MFA support                                                       | 🔜 Coming soon  |
-| [Admin](/docs/auth/guides/plugins/admin) plugin customization     | 🔜 Coming soon  |
-| Other plugins                                                     | Based on demand |
+| Plugin                                                        | Status          |
+| ------------------------------------------------------------- | --------------- |
+| MFA support                                                   | 🔜 Coming soon  |
+| [Admin](/docs/auth/guides/plugins/admin) plugin customization | 🔜 Coming soon  |
+| Other plugins                                                 | Based on demand |
 
 ## SDK and UI references
 

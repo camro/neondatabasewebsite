@@ -61,10 +61,16 @@
               slug: import/migrate-sqlite
             - title: MySQL
               slug: import/migrate-mysql
+            - title: PlanetScale
+              slug: import/migrate-from-planetscale
+            - title: Railway
+              slug: import/migrate-from-railway
             - title: Render
               slug: import/migrate-from-render
             - title: Supabase
               slug: import/migrate-from-supabase
+            - title: Turso
+              slug: import/migrate-from-turso
             - title: Neon to Neon
               slug: import/migrate-from-neon
             - title: Schema-only
@@ -207,8 +213,8 @@
       items:
         - title: Backup & restore
           slug: guides/backup-restore
-        - title: Restore window
-          slug: introduction/restore-window
+        - title: History window
+          slug: introduction/history-window
         - title: Instant restore
           slug: introduction/branch-restore
         - title: Time Travel
@@ -486,10 +492,14 @@
                       slug: auth/guides/plugins/email-otp
                     - title: JWT
                       slug: auth/guides/plugins/jwt
+                    - title: Magic Link
+                      slug: auth/guides/plugins/magic-link
                     - title: OpenAPI
                       slug: auth/guides/plugins/openapi
                     - title: Organization
                       slug: auth/guides/plugins/organization
+                    - title: Phone Number
+                      slug: auth/guides/plugins/phone-number
 
             - section: Reference
               items:
@@ -1037,8 +1047,8 @@
               items:
                 - title: Backup & restore
                   slug: guides/backup-restore
-                - title: Restore window
-                  slug: introduction/restore-window
+                - title: History window
+                  slug: introduction/history-window
                 - title: Instant restore
                   slug: introduction/branch-restore
                 - title: Overview

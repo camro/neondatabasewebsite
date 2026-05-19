@@ -115,19 +115,37 @@ export default {
       },
       free: 'Free<span>with limited window/size</span>',
       launch:
-        '$0.20 per GB-month <span>based on volume of data changes during your selected restore window</span>',
+        '$0.20 per GB-month <span>based on volume of data changes during your selected history window</span>',
       scale:
-        '$0.20 per GB-month <span>based on volume of data changes during your selected restore window</span>',
+        '$0.20 per GB-month <span>based on volume of data changes during your selected history window</span>',
     },
     {
       rows: '3',
       feature: {
-        title: 'Restore window',
-        subtitle: 'Controls history (configurable)',
+        title: 'History window',
+        subtitle: 'For instant restore (configurable)',
       },
       free: 'Up to 6 hours<span>or 1 GB of data changes</span>',
       launch: 'Up to 7 days',
       scale: 'Up to 30 days',
+    },
+    {
+      rows: '2',
+      feature: {
+        title: 'Snapshots',
+      },
+      free: '1 snapshot',
+      launch: '10 snapshots  <span>$0.09/GB-month</span>',
+      scale: '10 snapshots  <span>$0.09/GB-month</span>',
+    },
+    {
+      rows: '2',
+      feature: {
+        title: 'Scheduled Backups',
+      },
+      free: false,
+      launch: 'Daily/Weekly/Monthly <span>$0.09/GB-month</span>',
+      scale: 'Daily/Weekly/Monthly <span>$0.09/GB-month</span>',
     },
     {
       rows: '1',
